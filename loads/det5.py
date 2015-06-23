@@ -52,6 +52,7 @@ class det5_base(LoadOut):
 
 class Operation_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_wood_headset'
+	goggles = 'TRYK_Shemagh_G'
 	class Primary:
 		weapon = 'rhs_weap_m4a1_blockII_grip2'
 		optic = 'RH_eothhs1'
@@ -70,6 +71,7 @@ class Operation_det5(det5_base):
 		]
 		
 class officer_det5(det5_base):
+	goggles = 'TRYK_Shemagh'
 	class Primary:
 		weapon = 'rhs_weap_m4a1_blockII_M203'
 		optic = 'iansky_specterdrkf_d_2D'
@@ -95,6 +97,7 @@ class officer_det5(det5_base):
 
 class Intel_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_tan_headset_ess'
+	goggles = 'TRYK_Shemagh'
 	class Primary:
 		weapon = 'rhs_weap_mk18_grip2_KAC'
 		optic = 'RH_t1'
@@ -113,6 +116,7 @@ class Intel_det5(det5_base):
 		
 class Weapons_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_des_headset'
+	goggles = 'TRYK_Shemagh'
 	class Primary:
 		weapon = 'rhs_weap_m249_pip_S_vfg'
 		optic = 'iansky_specterdr_d_2D'
@@ -131,6 +135,7 @@ class Weapons_det5(det5_base):
 
 class Engineer_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_wood_headset_ess'
+	goggles = 'TRYK_Shemagh_G'
 	class Primary:
 		weapon = 'rhs_weap_m4a1_blockII_grip2'
 		optic = 'RH_ta31rmr_tan'
@@ -156,6 +161,7 @@ class Engineer_det5(det5_base):
 
 class Medical_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_tan_headset'
+	goggles = 'TRYK_Shemagh_G'
 	class Primary:
 		weapon = 'rhs_weap_m4a1_blockII_grip2'
 		optic = 'RH_eotexps3'
@@ -185,6 +191,7 @@ class Medical_det5(det5_base):
 
 class Commo_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_des_headset_ess'
+	goggles = 'TRYK_Shemagh'
 	class Primary:
 		weapon = 'rhs_weap_m4a1_blockII_grip2'
 		optic = 'RH_ta31rmr_tan'
