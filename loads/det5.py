@@ -1,11 +1,6 @@
-import base
+from p4a.loadout import LoadOut
 
-
-#add fuccking lasers for rails
-#snipers to box
-#add chemlights for pubs
-
-class det5_base(base.Base):
+class det5_base(LoadOut):
 	class NoWrite: pass
 	headgear = 'rhsusf_ach_bare_headset'
 	binoc = 'ACE_Vector'
@@ -20,7 +15,7 @@ class det5_base(base.Base):
 
 	class HandGun:
 		weapon = 'RH_g17'
-		mags = [['RH_17Rnd_9x19_g17', 12]]
+		mags = [['RH_17Rnd_9x19_g17', 17]]
 		rail = 'RH_M6X'
 		suppressor = 'RH_gemtech9'
 
