@@ -54,16 +54,16 @@ class Operation_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_wood_headset'
 	goggles = 'TRYK_Shemagh_G'
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
-		optic = 'RH_eothhs1'
-		suppressor = 'rhsusf_acc_nt4_tan'
-		rail = 'rhsusf_acc_anpeq15'
+		weapon = 'SMA_Mk17'
+		optic = 'RH_eotech553mag_tan'
+		suppressor = 'SMA_spSCARtan_762'
+		rail = 'SMA_ANPEQ15_TAN'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 20],
 		]
 	class Vest(det5_base.Vest):
 		items = det5_base.Vest.items + [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 6],
 		]
 
 	class Backpack(det5_base.Backpack):
@@ -73,42 +73,40 @@ class Operation_det5(det5_base):
 class officer_det5(det5_base):
 	goggles = 'TRYK_Shemagh'
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_M203'
+		weapon = 'SMA_Mk17_EGLM'
 		optic = 'iansky_specterdrkf_d_2D'
-		suppressor = 'rhsusf_acc_nt4_tan'
-		rail = 'rhsusf_acc_anpeq15'
+		suppressor = 'SMA_spSCARtan_762'
+		rail = 'SMA_ANPEQ15_TOP_TAN_SCAR'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
-			['rhs_mag_M433_HEDP', 1],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 20],
+			['1Rnd_HE_Grenade_shell', 1],
 		]
 	class Vest(det5_base.Vest):
 		items = det5_base.Vest.items + [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
-			['rhs_mag_M441_HE', 4],
-			['rhs_mag_M433_HEDP', 4],
-
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 6],
+			['1Rnd_HE_Grenade_shell', 8],
 		]
 	class Backpack(det5_base.Backpack):
 		items = det5_base.Backpack.items + [
-			['rhs_mag_M585_white', 2],
-			['rhs_mag_m661_green', 2],
-			['rhs_mag_m662_red', 2],
+			['1Rnd_Smoke_Grenade_shell', 2],
+			['1Rnd_SmokeGreen_Grenade_shell', 2],
+			['1Rnd_SmokeRed_Grenade_shell', 2],
 		]
 
 class Intel_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_tan_headset_ess'
 	goggles = 'TRYK_Shemagh'
 	class Primary:
-		weapon = 'rhs_weap_mk18_grip2_KAC'
-		optic = 'RH_t1'
-		suppressor = 'rhsusf_acc_nt4_tan'
-		rail = 'rhsusf_acc_anpeq15'
+		weapon = 'SMA_Mk17'
+		optic = 'RH_shortdot'
+		suppressor = 'SMA_spSCARtan_762'
+		rail = 'SMA_ANPEQ15_TAN'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 20],
 		]
 	class Vest(det5_base.Vest):
 		items = det5_base.Vest.items + [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 6],
 		]
 	class Backpack(det5_base.Backpack):
 		items = det5_base.Backpack.items + [
@@ -137,12 +135,12 @@ class Engineer_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_wood_headset_ess'
 	goggles = 'TRYK_Shemagh_G'
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
+		weapon = 'SMA_MK14'
 		optic = 'RH_ta31rmr_tan'
-		suppressor = 'rhsusf_acc_nt4_tan'
-		rail = 'rhsusf_acc_anpeq15'
+		suppressor = 'SMA_spSCARtan_762'
+		rail = 'SMA_ANPEQ15_TAN'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 20],
 		]
 	class Secondary:
 		weapon = 'rhs_weap_M136_hedp'
@@ -151,7 +149,7 @@ class Engineer_det5(det5_base):
 		]
 	class Vest(det5_base.Vest):
 		items = det5_base.Vest.items + [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 6],
 		]
 	class Backpack(det5_base.Backpack):
 		type = 'B_Kitbag_rgr'
@@ -163,16 +161,16 @@ class Medical_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_tan_headset'
 	goggles = 'TRYK_Shemagh_G'
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
-		optic = 'RH_eotexps3'
-		suppressor = 'rhsusf_acc_nt4_tan'
-		rail = 'rhsusf_acc_anpeq15'
+		weapon = 'SMA_MK14'
+		optic = 'RH_eotech553_tan'
+		suppressor = 'SMA_spSCARtan_762'
+		rail = 'SMA_ANPEQ15_TOP_TAN_SCAR'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 20],
 		]
 	class Vest(det5_base.Vest):
 		items = det5_base.Vest.items + [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 6],
 		]
 	class Backpack(det5_base.Backpack):
 		type = 'B_Kitbag_cbr'
@@ -193,16 +191,16 @@ class Commo_det5(det5_base):
 	headgear = 'rhsusf_ach_bare_des_headset_ess'
 	goggles = 'TRYK_Shemagh'
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
+		weapon = 'SMA_MK14'
 		optic = 'RH_ta31rmr_tan'
-		suppressor = 'rhsusf_acc_nt4_tan'
-		rail = 'rhsusf_acc_anpeq15'
+		suppressor = 'SMA_spSCARtan_762'
+		rail = 'SMA_ANPEQ15_TAN'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 20],
 		]
 	class Vest(det5_base.Vest):
 		items = det5_base.Vest.items + [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
+			['SMA_20Rnd_762x51mm_M80A1_EPR', 6],
 		]
 	class Backpack:
 		type = 'tf_rt1523g_big_rhs'
