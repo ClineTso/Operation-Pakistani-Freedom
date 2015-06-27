@@ -1,6 +1,6 @@
 from p4a.loadout import LoadOut
 
-class cdf_base(LoadOut):
+class ana_base(LoadOut):
 	headgear = 'LOP_H_6B27M_ANA'
 	items = [
 		'ItemWatch',
@@ -32,24 +32,24 @@ class cdf_base(LoadOut):
 		]
 ################  Rifleman
 
-class cdf_rifleman(cdf_base):
+class ana_rifleman(ana_base):
 	class Primary:
 		weapon = 'rhs_weap_m16a4_carryhandle'
 		mags = [
 			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
 		]
-	class Vest(cdf_base.Vest):
-		items = cdf_base.Vest.items + [
+	class Vest(ana_base.Vest):
+		items = ana_base.Vest.items + [
 			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
 		]
-	class Backpack(cdf_base.Backpack):
-		items = cdf_base.Backpack.items + [
+	class Backpack(ana_base.Backpack):
+		items = ana_base.Backpack.items + [
 		]
 
 		
 ################  Grenadier 
 
-class cdf_grenadier(cdf_rifleman):
+class ana_grenadier(ana_rifleman):
 	class Primary:
 		weapon = 'rhs_weap_m16a4_carryhandle_M203'
 		mags = [
@@ -62,12 +62,12 @@ class cdf_grenadier(cdf_rifleman):
 		mags = [
 			['tf47_at4_m_HEDP', 1],
 		]
-	class Vest(cdf_rifleman.Vest):
-		items = cdf_rifleman.Vest.items + [
+	class Vest(ana_rifleman.Vest):
+		items = ana_rifleman.Vest.items + [
 		]
 
-	class Backpack(cdf_rifleman.Backpack):
-		items = cdf_rifleman.Backpack.items + [
+	class Backpack(ana_rifleman.Backpack):
+		items = ana_rifleman.Backpack.items + [
 			['rhs_mag_M433_HEDP', 5],
 			['rhs_mag_M441_HE', 5],
 			['rhs_mag_m714_White', 5],
@@ -75,9 +75,9 @@ class cdf_grenadier(cdf_rifleman):
 
 ################  Squad Leader
 
-class cdf_tl(cdf_rifleman):
+class ana_tl(ana_rifleman):
 	headgear = 'LOP_H_6B27M_ess_ANA'
-	items = cdf_rifleman.items + ['tf_anprc154']
+	items = ana_rifleman.items + ['tf_anprc154']
 	binoc = 'Binocular'
 
 	class Primary:
@@ -85,69 +85,69 @@ class cdf_tl(cdf_rifleman):
 		mags = [
 			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
 		]
-	class Vest(cdf_rifleman.Vest):
-		items = cdf_rifleman.Vest.items + [
+	class Vest(ana_rifleman.Vest):
+		items = ana_rifleman.Vest.items + [
 		]
 
-	class Uniform(cdf_rifleman.Uniform):
-		items = cdf_rifleman.Uniform.items + [
+	class Uniform(ana_rifleman.Uniform):
+		items = ana_rifleman.Uniform.items + [
 		]
-	class Backpack(cdf_rifleman.Backpack):
-		items = cdf_rifleman.Backpack.items + [
+	class Backpack(ana_rifleman.Backpack):
+		items = ana_rifleman.Backpack.items + [
 			['rhsusf_ANPVS_14', 1],
 		]
 		
-class cdf_sl(cdf_tl):
+class ana_sl(ana_tl):
 	headgear = 'LOP_H_6B27M_ess_ANA'
-	class Backpack(cdf_rifleman.Backpack):
-		items = cdf_rifleman.Backpack.items + [
+	class Backpack(ana_rifleman.Backpack):
+		items = ana_rifleman.Backpack.items + [
 			['tf_anprc152_2', 1],
 		]
 
 
 ################  Medium Machine Gunner
-class cdf_mg(cdf_base):
+class ana_mg(ana_base):
 	binoc = 'Binocular'
 	class Primary:
 		weapon = 'rhs_weap_pkm'
 		mags = [
 			['rhs_100Rnd_762x54mmR_green', 100],
 		]
-	class Vest(cdf_base.Vest):
-		items = cdf_base.Vest.items + [
+	class Vest(ana_base.Vest):
+		items = ana_base.Vest.items + [
 			['rhs_100Rnd_762x54mmR_green', 1],
 		]
-	class Backpack(cdf_base.Backpack):
-		items = cdf_base.Backpack.items + [
+	class Backpack(ana_base.Backpack):
+		items = ana_base.Backpack.items + [
 			['rhs_100Rnd_762x54mmR', 2],
 		]
 		
-class cdf_lmg(cdf_base):
+class ana_lmg(ana_base):
 	binoc = 'Binocular'
 	class Primary:
 		weapon = 'rhs_weap_m249_pip_L'
 		mags = [
 			['rhsusf_100Rnd_556x45_soft_pouch', 100],
 		]
-	class Vest(cdf_base.Vest):
-		items = cdf_base.Vest.items + [
+	class Vest(ana_base.Vest):
+		items = ana_base.Vest.items + [
 			['rhsusf_100Rnd_556x45_soft_pouch', 1],
 		]
-	class Backpack(cdf_base.Backpack):
-		items = cdf_base.Backpack.items + [
+	class Backpack(ana_base.Backpack):
+		items = ana_base.Backpack.items + [
 			['rhsusf_100Rnd_556x45_soft_pouch', 2],
 		]
 
 ################  Medic
-class cdf_medic(cdf_rifleman):
-	items = cdf_crew.items + [
+class ana_medic(ana_rifleman):
+	items = ana_crew.items + [
 		'tf_anprc154',
 	]
-	class Vest(cdf_rifleman.Vest):
-		items = cdf_rifleman.Vest.items + [
+	class Vest(ana_rifleman.Vest):
+		items = ana_rifleman.Vest.items + [
 		]
-	class Backpack(cdf_rifleman.Backpack):
-		items = cdf_base.Backpack.items + [
+	class Backpack(ana_rifleman.Backpack):
+		items = ana_base.Backpack.items + [
 			['ACE_fieldDressing', 16],
 			['ACE_packingBandage', 16],
 			['ACE_elasticBandage', 16],
@@ -163,8 +163,8 @@ class cdf_medic(cdf_rifleman):
 
 ################  Platoon Leader
 
-class cdf_pl(cdf_rifleman):
-	items = cdf_rifleman.items + ['tf_anprc154']
+class ana_pl(ana_rifleman):
+	items = ana_rifleman.items + ['tf_anprc154']
 	binoc = 'Binocular'
 	headgear = 'H_Beret_blk'
 	goggles = 'G_Spectacles'
@@ -177,27 +177,27 @@ class cdf_pl(cdf_rifleman):
 		weapon = 'RH_mak'
 		mags = [['RH_8Rnd_9x18_Mak', 8]]
 		]
-	class Uniform(cdf_rifleman.Uniform):
+	class Uniform(ana_rifleman.Uniform):
 		type = 'LOP_U_AA_Fatigue_01_slv'
-		items = cdf_rifleman.Uniform.items + [
+		items = ana_rifleman.Uniform.items + [
 		]
-	class Vest(cdf_rifleman.Vest):
-		items = cdf_base.Vest.items + [
+	class Vest(ana_rifleman.Vest):
+		items = ana_base.Vest.items + [
 			['RH_8Rnd_9x18_Mak', 2],
 		]
-	class Backpack(cdf_base.Backpack):
-		items = cdf_base.Backpack.items + [
+	class Backpack(ana_base.Backpack):
+		items = ana_base.Backpack.items + [
 			['rhsusf_ANPVS_14', 1],
 			['tf_anprc152', 1],
 		]
 
 ################  Platoon RTO
 
-class cdf_rto(cdf_rifleman_light):
+class ana_rto(ana_rifleman_light):
 	binoc = 'Binocular'
-	items = cdf_rifleman_light.items + ['tf_anprc154']
+	items = ana_rifleman_light.items + ['tf_anprc154']
 	class Backpack:
 		type = 'tf_anprc155'
-		items = cdf_rifleman_light.Backpack.items + [
+		items = ana_rifleman_light.Backpack.items + [
 			['tf_anprc152', 1],
 		]
