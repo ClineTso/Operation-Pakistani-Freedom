@@ -66,6 +66,7 @@ class army_tl(army_rifleman):
 			['tf_anprc152', 1],
 		]
 	class Vest(army_base.Vest):
+		type = 'rhsusf_iotv_ocp_Teamleader'
 		items = army_base.Vest.items + [
 			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
 
@@ -92,6 +93,11 @@ class army_sl(army_tl):
 	class Uniform(army_base.Uniform):
 		items = army_base.Uniform.items + [['RH_15Rnd_9x19_M9', 2]]
 		]
+	class Vest(army_base.Vest):
+		type = 'rhsusf_iotv_ocp_Squadleader'
+		items = army_tl.Vest.items + [
+
+		]
 
 class army_ar(army_base):
 	class Primary(army_base.Primary):
@@ -108,6 +114,7 @@ class army_ar(army_base):
 		items = army_base.Uniform.items + [['RH_15Rnd_9x19_M9', 2]]
 
 	class Vest(army_base.Vest):
+		type = 'rhsusf_iotv_ocp_SAW'
 		items = army_base.Vest.items + [
 			['rhsusf_100Rnd_556x45_soft_pouch', 2],
 		]
@@ -131,6 +138,7 @@ class army_gl(army_rifleman):
 			['', 1],
 		]
 	class Vest(army_base.Vest):
+		type = 'rhsusf_iotv_ocp_Grenadier'
 		items = army_base.Vest.items + [
 			['rhs_mag_M433_HEDP', 3],
 			['rhs_mag_M714_white', 3],
@@ -148,6 +156,7 @@ class army_mg(army_base):
 		items = army_base.Uniform.items + [['RH_15Rnd_9x19_M9', 2]]
 
 	class Vest(army_base.Vest):
+		type = 'rhsusf_iotv_ocp_SAW'
 		items = army_base.Vest.items + [
 			['rhsusf_100Rnd_762x51', 2],
 		]
@@ -239,5 +248,10 @@ class army_medic(army_rifleman):
 			['ACE_atropine', 4],
 			['ACE_epinephrine', 4],
 			['ACE_salineIV_250', 4],
+		]
+	class Vest(army_base.Vest):
+		type = 'rhsusf_iotv_ocp_Medic'
+		items = army_base.Vest.items + [
+		
 		]
 
