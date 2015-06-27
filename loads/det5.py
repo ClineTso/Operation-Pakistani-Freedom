@@ -7,7 +7,6 @@ class det5_base(LoadOut):
 	items = base.Base.items + [
 		'ItemGPS',
 		'tf_microdagr',
-		'TRYK_Shemagh',
 		'tf_anprc152',
 		'ItemMap',
 		'ItemCompass',
