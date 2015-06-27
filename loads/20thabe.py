@@ -7,6 +7,7 @@ class army_base(LoadOut):
 		'tf_rf7800str',
 		'ItemMap',
 		'ItemCompass',
+		'ItemWatch',
 	]
 
 	class Primary:

@@ -1,7 +1,7 @@
 from p4a.loadout import LoadOut
 
 class ana_base(LoadOut):
-	headgear = 'LOP_H_6B27M_ANA'
+	headgear = 'rhs_6b27m_green'
 	items = [
 		'ItemWatch',
 		'ItemMap',
@@ -14,7 +14,7 @@ class ana_base(LoadOut):
 			['ACE_EarPlugs', 1],
 		]
 	class Vest:
-		type = 'LOP_V_CarrierLite_ANA'
+		type = 'V_IBA_MG'
 		items = [
 			['rhs_mag_m67', 2],
 			['rhs_mag_an_m8hc', 2],
@@ -34,13 +34,13 @@ class ana_base(LoadOut):
 
 class ana_rifleman(ana_base):
 	class Primary:
-		weapon = 'rhs_weap_m16a4_carryhandle'
+		weapon = 'RH_M16A2'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['RH_30Rnd_556x45_M855A1', 30],
 		]
 	class Vest(ana_base.Vest):
 		items = ana_base.Vest.items + [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 6],
+			['RH_30Rnd_556x45_M855A1', 6],
 		]
 	class Backpack(ana_base.Backpack):
 		items = ana_base.Backpack.items + [
@@ -51,10 +51,10 @@ class ana_rifleman(ana_base):
 
 class ana_grenadier(ana_rifleman):
 	class Primary:
-		weapon = 'rhs_weap_m16a4_carryhandle_M203'
+		weapon = 'RH_M16A2gl'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
-			['rhs_mag_M433_HEDP', 1],
+			['RH_30Rnd_556x45_M855A1', 30],
+			['1Rnd_HE_Grenade_shell', 1],
 		]
 
 	class Secondary:
@@ -68,22 +68,20 @@ class ana_grenadier(ana_rifleman):
 
 	class Backpack(ana_rifleman.Backpack):
 		items = ana_rifleman.Backpack.items + [
-			['rhs_mag_M433_HEDP', 5],
-			['rhs_mag_M441_HE', 5],
-			['rhs_mag_m714_White', 5],
+			['1Rnd_HE_Grenade_shell', 10],
+			['1Rnd_Smoke_Grenade_shell', 5],
 		]
 
 ################  Squad Leader
 
 class ana_tl(ana_rifleman):
-	headgear = 'LOP_H_6B27M_ess_ANA'
 	items = ana_rifleman.items + ['tf_anprc154']
 	binoc = 'Binocular'
 
 	class Primary:
-		weapon = 'rhs_weap_m16a4_carryhandle'
+		weapon = 'RH_M16A2'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['RH_30Rnd_556x45_M855A1', 30],
 		]
 	class Vest(ana_rifleman.Vest):
 		items = ana_rifleman.Vest.items + [
@@ -98,7 +96,6 @@ class ana_tl(ana_rifleman):
 		]
 		
 class ana_sl(ana_tl):
-	headgear = 'LOP_H_6B27M_ess_ANA'
 	class Backpack(ana_rifleman.Backpack):
 		items = ana_rifleman.Backpack.items + [
 			['tf_anprc152_2', 1],
@@ -169,9 +166,9 @@ class ana_pl(ana_rifleman):
 	headgear = 'H_Beret_blk'
 	goggles = 'G_Spectacles'
 	class Primary:
-		weapon = 'rhs_weap_m16a4_carryhandle'
+		weapon = 'RH_M16A2'
 		mags = [
-			['rhs_mag_30Rnd_556x45_Mk262_Stanag', 30],
+			['RH_30Rnd_556x45_M855A1', 30],
 		]
 	class HandGun:
 		weapon = 'RH_mak'
